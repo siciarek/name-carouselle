@@ -3,11 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+            <link rel="stylesheet" href="{{ asset('bundles/app/css/main.css') }}">
+        {% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        <div class="container">{% block body %}{% endblock %}</div>
+
+        {% block javascripts %}
+            <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="//cdn.jsdelivr.net/jquery.cookie/1.3.1/jquery.cookie.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+            <script src="{{ asset('bundles/app/js/main.js') }}"></script>
+        {% endblock %}
     </body>
 </html>

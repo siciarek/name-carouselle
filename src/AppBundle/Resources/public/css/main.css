@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan|Ewert|Fascinate+Inline|Fontdiner+Swanky|Fredericka+the+Great|Peralta|Ribeye|Sancreek|Spicy+Rice|Ultra|Vast+Shadow');
+
+.main-page h1 {
+    font-size: 4rem;
+    font-family: Ewert;
+    color: #F78DA4;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.main-page .picture {
+    max-width: 100%;
+}

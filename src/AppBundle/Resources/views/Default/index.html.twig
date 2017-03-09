@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+
+    </script>
+{% endblock %}
+
+{% block body %}
+    <div class="center main-page">
+        <h1>Karuzela imion</h1>
+        <a href="{{ url('homepage') }}">
+            <img class="picture" src="{{ asset('bundles/app/images/carouselle.jpg') }}" />
+        </a>
+    </div>
+
+{% endblock %}
